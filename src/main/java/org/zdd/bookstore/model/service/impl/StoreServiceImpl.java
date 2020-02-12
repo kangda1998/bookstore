@@ -15,6 +15,9 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 店铺服务
+ */
 @Service
 public class StoreServiceImpl implements IStoreService {
 

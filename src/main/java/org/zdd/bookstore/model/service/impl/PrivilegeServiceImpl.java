@@ -17,6 +17,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 后台权限服务
+ */
 @Service
 public class PrivilegeServiceImpl implements IPrivilegeService {
 

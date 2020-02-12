@@ -146,6 +146,11 @@ public class OrderServiceImpl implements IOrderService {
         return BSResultUtil.success(orders);
     }
 
+    /**
+     * 删除订单
+     * @param orderId
+     * @return
+     */
     @Override
     @Transactional
     public BSResult deleteOrder(String orderId) {

@@ -28,9 +28,9 @@
             </li>
 
 
-            <li class="header_li">
-                <a href="page/register">免费注册</a>
-            </li>
+<%--            <li class="header_li">--%>
+<%--                <a href="page/register">免费注册</a>--%>
+<%--            </li>--%>
             <li class="header_li">
                 <c:if test="${sessionScope.loginUser == null}">
                     <a href="page/login">亲，请登录</a>
@@ -47,7 +47,7 @@
             </li>
 
             <li class="header_li">
-                欢迎来到dd书城，<a href="">首页</a>
+                欢迎来到dd书城 <a href="">首页</a>
             </li>
 
         </ul>

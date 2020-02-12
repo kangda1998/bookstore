@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+/**
+ * 购物车服务
+ */
 @Service
 public class CartServiceImpl implements ICartService {
 

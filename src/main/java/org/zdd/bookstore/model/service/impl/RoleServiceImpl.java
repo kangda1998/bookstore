@@ -18,6 +18,9 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 角色与角色权限服务
+ */
 @Service
 public class RoleServiceImpl implements IRoleService {
 
@@ -81,8 +84,8 @@ public class RoleServiceImpl implements IRoleService {
     @Override
     @Transactional
     public BSResult updateRole(Role role) {
-        roleMapper.updateByPrimaryKeySelective(role);
         role.setUpdated(new Date());
+        roleMapper.updateByPrimaryKeySelective(role);
         return BSResultUtil.success();
     }
 
