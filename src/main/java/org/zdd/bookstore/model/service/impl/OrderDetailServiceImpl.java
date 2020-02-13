@@ -36,7 +36,6 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("orderId", orderId);
         List<OrderDetail> orderDetails = orderDetailMapper.selectByExample(example);
-
         return orderDetails.stream()
                 .map(orderDetail -> bookInfoMapper.selectByPrimaryKey(orderDetail.getBookId()))
                 .collect(Collectors.toList());

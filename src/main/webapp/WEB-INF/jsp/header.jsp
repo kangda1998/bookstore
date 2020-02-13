@@ -37,17 +37,9 @@
 </script>
 
 <html>
-<!--
-    作者：offline
-    时间：2018-10-29
-    描述：top
--->
+
 <jsp:include page="top.jsp"/>
-<!--
-    作者：offline
-    时间：2018-10-29
-    描述：logo search
--->
+
 <div class="container">
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 logo">

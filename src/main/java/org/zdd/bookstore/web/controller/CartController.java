@@ -21,7 +21,7 @@ public class CartController {
     @Autowired
     private ICartService cartService;
 
-    //返回购物差页面
+    //返回购物车页面
     @GetMapping("/items")
     public String showCart() {
         return "cart";
