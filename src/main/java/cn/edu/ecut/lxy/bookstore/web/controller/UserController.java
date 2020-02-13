@@ -183,10 +183,11 @@ public class UserController {
             BSResult bsResult = userService.saveUser(user);
             //获得未激活的用户
             User userNotActive = (User) bsResult.getData();
+            String content = "<html><body><a href = 'http://"+ip+"/user/active?activeCode="+userNotActive.getCode()+"'>亲爱的" + user.getUsername() +
+                    "，请您点击此链接前往激活</a></body></html>";
             try {
                 mailService.sendHtmlMail(user.getEmail(), "<dd书城>---用户激活---",
-                        "<html><body><a href='http://"+ip+"/user/active?activeCode=" + userNotActive.getCode() + "'>亲爱的" + user.getUsername() +
-                                "，请您点击此链接前往激活</a></body></html>");
+                        content);
             } catch (Exception e) {
                 e.printStackTrace();
                 model.addAttribute("registerError", "发送邮件异常！请检查您输入的邮箱地址是否正确。");
@@ -195,7 +196,6 @@ public class UserController {
             model.addAttribute("username", user.getUsername());
             return "register_success";
         } else {
-
             //用户名已经存在，不能注册
             model.addAttribute("registerError", isExist.getMessage());
             return "register";
@@ -204,7 +204,8 @@ public class UserController {
     }
 
     @RequestMapping("/active")
-    public String activeUser(String activeCode, Model model) {
+    public String activeUser(HttpServletRequest request, Model model) {
+        String activeCode = request.getParameter("activeCode");
         BSResult bsResult = userService.activeUser(activeCode);
         if (!StringUtils.isEmpty(bsResult.getData())) {
             model.addAttribute("username", bsResult.getData());

@@ -1,7 +1,7 @@
 # bookstore电商书城系统说明
 ## 目的
-  - 目的: 在校学习，进一步熟悉Spring Boot开发模式，熟悉开发流程。
-  - 本系统适用于JavaWeb初学者。
+  - 目的: 在校学习和毕业设计，进一步熟悉和使用Spring Boot开发模式，熟悉开发流程。
+  - 本系统适用于JavaWeb开发者。
 ## 使用技术
   - 后台主要是springboot+mybatis+shiro+jsp(jsp已过时)...，前端界面主要使用bootstrap框架搭建，并使用了ueditor富文本编辑器、highcharts图表库 
 ## 系统划分与功能

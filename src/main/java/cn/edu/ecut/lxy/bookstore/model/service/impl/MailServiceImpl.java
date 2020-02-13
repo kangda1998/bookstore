@@ -56,12 +56,10 @@ public class MailServiceImpl implements IMailService {
     public void sendSimpleMail(String to, String subject, String content) throws Exception {
 
         SimpleMailMessage message = new SimpleMailMessage();
-
         message.setFrom(from);
         message.setTo(to);
         message.setSubject(subject);
         message.setText(content);
-
         try {
             mailSender.send(message);
             logger.info("简单邮件已经发送。");

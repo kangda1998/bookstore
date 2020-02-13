@@ -110,6 +110,8 @@ public class UserServiceImpl implements IUserService {
     public BSResult saveUser(User user) {
 
         user.setPassword(DigestUtils.md5DigestAsHex(user.getPassword().getBytes()));
+        //激活码
+
         user.setCode(UUID.randomUUID().toString());
         //刚刚注册的用户处于未激活状态
         user.setActive(userResourceProperties.getIsNotActive());

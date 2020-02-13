@@ -50,7 +50,7 @@
 <div id="middle">
     <shiro:notAuthenticated>
     <form action="<%=basePath%>user/login" method="post" id="loginForm">
-        <div id="register">密码登录</div>
+        <div id="register">用户登录</div>
         <div id="username_div">
             <span id="row1"></span>
             <input type="text" name="username" id="username" placeholder="用户名/手机号/邮箱"/>
