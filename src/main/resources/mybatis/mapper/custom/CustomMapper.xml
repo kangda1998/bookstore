@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.zdd.bookstore.model.dao.custom.CustomMapper">
+<mapper namespace="cn.edu.ecut.lxy.bookstore.model.dao.custom.CustomMapper">
 
   <!-- 订单表和订单详情表关联查询结果集 -->
-  <resultMap id="ordersResultMap" type="org.zdd.bookstore.model.entity.custom.OrderCustom">
+  <resultMap id="ordersResultMap" type="cn.edu.ecut.lxy.bookstore.model.entity.custom.OrderCustom">
     <!--
       自定义mapper，完成多表查询
     -->
     <id column="order_id" jdbcType="VARCHAR" property="orderId" />
     <!-- 一对一 -->
-    <association property="order" javaType="org.zdd.bookstore.model.entity.Orders">
+    <association property="order" javaType="cn.edu.ecut.lxy.bookstore.model.entity.Orders">
       <id column="order_id" jdbcType="VARCHAR" property="orderId" />
       <result column="user_id" jdbcType="INTEGER" property="userId" />
       <result column="payment" jdbcType="VARCHAR" property="payment" />
@@ -28,7 +28,7 @@
       <result column="buyer_rate" jdbcType="INTEGER" property="buyerRate" />
     </association>
 
-    <association property="orderShipping" javaType="org.zdd.bookstore.model.entity.OrderShipping">
+    <association property="orderShipping" javaType="cn.edu.ecut.lxy.bookstore.model.entity.OrderShipping">
       <id column="order_id" jdbcType="VARCHAR" property="orderId" />
       <result column="receiver_name" jdbcType="VARCHAR" property="receiverName" />
       <result column="receiver_phone" jdbcType="VARCHAR" property="receiverPhone" />
@@ -45,7 +45,7 @@
 
 
     <!-- 一对多关联映射 -->
-    <collection property="orderDetails" ofType="org.zdd.bookstore.model.entity.OrderDetail">
+    <collection property="orderDetails" ofType="cn.edu.ecut.lxy.bookstore.model.entity.OrderDetail">
 
       <id column="order_detail_id" jdbcType="INTEGER" property="orderDetailId" />
       <result column="order_number" jdbcType="VARCHAR" property="orderNumber" />
@@ -163,7 +163,7 @@
   </select>
 
   <!--用户所属角色查询-->
-  <select id="findRolesByUserId" parameterType="int" resultType="org.zdd.bookstore.model.entity.Role">
+  <select id="findRolesByUserId" parameterType="int" resultType="cn.edu.ecut.lxy.bookstore.model.entity.Role">
 
     SELECT
       r.role_id AS roleId,
@@ -179,7 +179,7 @@
   </select>
 
   <!--角色拥有的权限列表-->
-  <select id="findPrivilegesByRoleId" parameterType="int" resultType="org.zdd.bookstore.model.entity.Privilege">
+  <select id="findPrivilegesByRoleId" parameterType="int" resultType="cn.edu.ecut.lxy.bookstore.model.entity.Privilege">
 
     SELECT
       p.priv_id AS privId,
@@ -197,7 +197,7 @@
   </select>
 
   <!--查询商家类型的用户-->
-  <select id="findBusinesses" parameterType="int" resultType="org.zdd.bookstore.model.entity.User">
+  <select id="findBusinesses" parameterType="int" resultType="cn.edu.ecut.lxy.bookstore.model.entity.User">
 
     SELECT
       u.user_id as userId,
