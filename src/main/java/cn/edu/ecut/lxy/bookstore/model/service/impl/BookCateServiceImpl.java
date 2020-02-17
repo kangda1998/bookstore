@@ -18,9 +18,13 @@ public class BookCateServiceImpl implements IBookCateService {
     @Autowired
     private BookCategoryMapper bookCategoryMapper;
 
-
+    /**
+     * 查询所有书籍分类信息
+     * @return list
+     */
     @Override
     public List<BookCategory> getCategoryList() {
         return bookCategoryMapper.selectAll();
     }
+
 }
