@@ -1,7 +1,7 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.Privilege;
-import cn.edu.ecut.lxy.bookstore.model.service.IPrivilegeService;
+import cn.edu.ecut.lxy.bookstore.entity.Privilege;
+import cn.edu.ecut.lxy.bookstore.service.IPrivilegeService;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
 import cn.edu.ecut.lxy.bookstore.common.pojo.ZTreeNode;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

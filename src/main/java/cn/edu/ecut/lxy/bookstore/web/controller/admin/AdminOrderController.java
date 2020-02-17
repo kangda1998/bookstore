@@ -1,14 +1,14 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
 import cn.edu.ecut.lxy.bookstore.common.utils.BSResultUtil;
-import cn.edu.ecut.lxy.bookstore.model.entity.OrderShipping;
-import cn.edu.ecut.lxy.bookstore.model.entity.Orders;
-import cn.edu.ecut.lxy.bookstore.model.entity.Store;
-import cn.edu.ecut.lxy.bookstore.model.entity.User;
+import cn.edu.ecut.lxy.bookstore.entity.OrderShipping;
+import cn.edu.ecut.lxy.bookstore.entity.Orders;
+import cn.edu.ecut.lxy.bookstore.entity.Store;
+import cn.edu.ecut.lxy.bookstore.entity.User;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
-import cn.edu.ecut.lxy.bookstore.model.entity.custom.OrderCustom;
-import cn.edu.ecut.lxy.bookstore.model.service.IOrderService;
-import cn.edu.ecut.lxy.bookstore.model.service.IUserService;
+import cn.edu.ecut.lxy.bookstore.entity.custom.OrderCustom;
+import cn.edu.ecut.lxy.bookstore.service.IOrderService;
+import cn.edu.ecut.lxy.bookstore.service.IUserService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

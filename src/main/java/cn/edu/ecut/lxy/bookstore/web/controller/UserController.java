@@ -1,12 +1,12 @@
 package cn.edu.ecut.lxy.bookstore.web.controller;
 
 import cn.edu.ecut.lxy.bookstore.common.utils.BSResultUtil;
-import cn.edu.ecut.lxy.bookstore.model.entity.Store;
-import cn.edu.ecut.lxy.bookstore.model.entity.User;
-import cn.edu.ecut.lxy.bookstore.model.service.IMailService;
+import cn.edu.ecut.lxy.bookstore.entity.Store;
+import cn.edu.ecut.lxy.bookstore.entity.User;
+import cn.edu.ecut.lxy.bookstore.service.IMailService;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
-import cn.edu.ecut.lxy.bookstore.model.service.IStoreService;
-import cn.edu.ecut.lxy.bookstore.model.service.IUserService;
+import cn.edu.ecut.lxy.bookstore.service.IStoreService;
+import cn.edu.ecut.lxy.bookstore.service.IUserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;

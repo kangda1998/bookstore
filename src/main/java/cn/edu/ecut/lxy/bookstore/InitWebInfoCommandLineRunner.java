@@ -1,9 +1,9 @@
 package cn.edu.ecut.lxy.bookstore;
 
-import cn.edu.ecut.lxy.bookstore.model.dao.GlobalParameterMapper;
-import cn.edu.ecut.lxy.bookstore.model.entity.BookCategory;
-import cn.edu.ecut.lxy.bookstore.model.entity.GlobalParameter;
-import cn.edu.ecut.lxy.bookstore.model.service.IBookCateService;
+import cn.edu.ecut.lxy.bookstore.dao.GlobalParameterMapper;
+import cn.edu.ecut.lxy.bookstore.entity.BookCategory;
+import cn.edu.ecut.lxy.bookstore.entity.GlobalParameter;
+import cn.edu.ecut.lxy.bookstore.service.IBookCateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

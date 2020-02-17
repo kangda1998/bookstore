@@ -1,7 +1,7 @@
 package cn.edu.ecut.lxy.bookstore.pay;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.BookInfo;
-import cn.edu.ecut.lxy.bookstore.model.entity.Orders;
+import cn.edu.ecut.lxy.bookstore.entity.BookInfo;
+import cn.edu.ecut.lxy.bookstore.entity.Orders;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;

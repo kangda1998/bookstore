@@ -1,7 +1,7 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.Store;
-import cn.edu.ecut.lxy.bookstore.model.service.IBookInfoService;
+import cn.edu.ecut.lxy.bookstore.entity.Store;
+import cn.edu.ecut.lxy.bookstore.service.IBookInfoService;
 import cn.edu.ecut.lxy.bookstore.common.pojo.Bar;
 import cn.edu.ecut.lxy.bookstore.common.pojo.Pie;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

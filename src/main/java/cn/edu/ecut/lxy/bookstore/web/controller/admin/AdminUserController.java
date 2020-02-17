@@ -1,11 +1,11 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
-import cn.edu.ecut.lxy.bookstore.model.dao.custom.CustomMapper;
-import cn.edu.ecut.lxy.bookstore.model.entity.Role;
-import cn.edu.ecut.lxy.bookstore.model.entity.User;
+import cn.edu.ecut.lxy.bookstore.dao.custom.CustomMapper;
+import cn.edu.ecut.lxy.bookstore.entity.Role;
+import cn.edu.ecut.lxy.bookstore.entity.User;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
-import cn.edu.ecut.lxy.bookstore.model.service.IRoleService;
-import cn.edu.ecut.lxy.bookstore.model.service.IUserService;
+import cn.edu.ecut.lxy.bookstore.service.IRoleService;
+import cn.edu.ecut.lxy.bookstore.service.IUserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;

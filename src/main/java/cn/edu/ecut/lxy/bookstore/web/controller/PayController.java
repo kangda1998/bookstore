@@ -1,10 +1,10 @@
 package cn.edu.ecut.lxy.bookstore.web.controller;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.BookInfo;
-import cn.edu.ecut.lxy.bookstore.model.entity.Orders;
-import cn.edu.ecut.lxy.bookstore.model.service.IOrderDetailService;
+import cn.edu.ecut.lxy.bookstore.entity.BookInfo;
+import cn.edu.ecut.lxy.bookstore.entity.Orders;
+import cn.edu.ecut.lxy.bookstore.service.IOrderDetailService;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
-import cn.edu.ecut.lxy.bookstore.model.service.IOrderService;
+import cn.edu.ecut.lxy.bookstore.service.IOrderService;
 import cn.edu.ecut.lxy.bookstore.pay.Alipay;
 import cn.edu.ecut.lxy.bookstore.pay.PayContext;
 import org.springframework.beans.factory.annotation.Autowired;

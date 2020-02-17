@@ -1,6 +1,6 @@
 package cn.edu.ecut.lxy.bookstore.config;
 
-import cn.edu.ecut.lxy.bookstore.model.dao.custom.MyShiroRealm;
+import cn.edu.ecut.lxy.bookstore.dao.custom.MyShiroRealm;
 import net.sf.ehcache.CacheManager;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;

@@ -1,10 +1,10 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
 import cn.edu.ecut.lxy.bookstore.exception.BSException;
-import cn.edu.ecut.lxy.bookstore.model.dao.BookDescMapper;
-import cn.edu.ecut.lxy.bookstore.model.entity.BookInfo;
-import cn.edu.ecut.lxy.bookstore.model.entity.Store;
-import cn.edu.ecut.lxy.bookstore.model.service.IBookInfoService;
+import cn.edu.ecut.lxy.bookstore.dao.BookDescMapper;
+import cn.edu.ecut.lxy.bookstore.entity.BookInfo;
+import cn.edu.ecut.lxy.bookstore.entity.Store;
+import cn.edu.ecut.lxy.bookstore.service.IBookInfoService;
 import com.github.pagehelper.PageInfo;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import cn.edu.ecut.lxy.bookstore.common.utils.IDUtils;
-import cn.edu.ecut.lxy.bookstore.model.entity.BookDesc;
-import cn.edu.ecut.lxy.bookstore.model.service.IStoreService;
+import cn.edu.ecut.lxy.bookstore.entity.BookDesc;
+import cn.edu.ecut.lxy.bookstore.service.IStoreService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

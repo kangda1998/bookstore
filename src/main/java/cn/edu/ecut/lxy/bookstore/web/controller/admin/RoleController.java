@@ -1,8 +1,8 @@
 package cn.edu.ecut.lxy.bookstore.web.controller.admin;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.Role;
+import cn.edu.ecut.lxy.bookstore.entity.Role;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
-import cn.edu.ecut.lxy.bookstore.model.service.IRoleService;
+import cn.edu.ecut.lxy.bookstore.service.IRoleService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,9 +1,9 @@
 package cn.edu.ecut.lxy.bookstore.web.controller;
 
-import cn.edu.ecut.lxy.bookstore.model.entity.BookInfo;
-import cn.edu.ecut.lxy.bookstore.model.entity.custom.Cart;
-import cn.edu.ecut.lxy.bookstore.model.service.IBookInfoService;
-import cn.edu.ecut.lxy.bookstore.model.service.ICartService;
+import cn.edu.ecut.lxy.bookstore.entity.BookInfo;
+import cn.edu.ecut.lxy.bookstore.entity.custom.Cart;
+import cn.edu.ecut.lxy.bookstore.service.IBookInfoService;
+import cn.edu.ecut.lxy.bookstore.service.ICartService;
 import cn.edu.ecut.lxy.bookstore.common.pojo.BSResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

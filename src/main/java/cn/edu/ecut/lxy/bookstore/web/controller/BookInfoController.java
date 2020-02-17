@@ -2,11 +2,11 @@ package cn.edu.ecut.lxy.bookstore.web.controller;
 
 
 import cn.edu.ecut.lxy.bookstore.exception.BSException;
-import cn.edu.ecut.lxy.bookstore.model.dao.BookDescMapper;
-import cn.edu.ecut.lxy.bookstore.model.entity.BookInfo;
-import cn.edu.ecut.lxy.bookstore.model.service.IBookInfoService;
+import cn.edu.ecut.lxy.bookstore.dao.BookDescMapper;
+import cn.edu.ecut.lxy.bookstore.entity.BookInfo;
+import cn.edu.ecut.lxy.bookstore.service.IBookInfoService;
 import com.github.pagehelper.PageInfo;
-import cn.edu.ecut.lxy.bookstore.model.entity.BookDesc;
+import cn.edu.ecut.lxy.bookstore.entity.BookDesc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -11,7 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @EnableCaching//开启缓存
-@MapperScan("cn.edu.ecut.lxy.bookstore.model.dao")
+@MapperScan("cn.edu.ecut.lxy.bookstore.dao")
 @EnableAsync
 public class BookstoreApplication extends SpringBootServletInitializer{
 
