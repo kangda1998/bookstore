@@ -45,7 +45,13 @@ public class BookInfoServiceImpl implements IBookInfoService {
     @Autowired
     private BookCategoryMapper categoryMapper;
 
-
+    /**
+     * 根据分类Id查询书籍列表信息
+     * @param cateId
+     * @param currentPage
+     * @param pageSize
+     * @return
+     */
     @Override
     @Cacheable(cacheNames="book",key = "'bookInfo_'+#cateId+'_'+#currentPage+#pageSize")
     public List<BookInfo> findBookListByCateId(int cateId, int currentPage, int pageSize) {
@@ -60,7 +66,12 @@ public class BookInfoServiceImpl implements IBookInfoService {
         PageInfo<BookInfo> pageInfo = new PageInfo<>(books);
         return pageInfo.getList();
     }
-
+    /**
+     * 根据bookId和上架查询书籍详情，根据条件查询列表，取第一个数据
+     * @param bookId
+     * @return
+     * @throws BSException
+     */
     @Override
     @Cacheable(cacheNames="book",key = "'bookInfo_'+#bookId")
     public BookInfo findById(Integer bookId) throws BSException {
@@ -76,7 +87,11 @@ public class BookInfoServiceImpl implements IBookInfoService {
         bookInfo.setCategoryName(categoryMapper.selectByPrimaryKey(bookInfo.getBookCategoryId()).getName());
         return bookInfo;
     }
-
+    /**
+     * 浏览量加一
+     * @param bookInfo
+     * @return
+     */
     public int addLookMount(BookInfo bookInfo){
         bookInfo.setLookMount(bookInfo.getLookMount() + 1);
         return bookInfoMapper.updateByPrimaryKeySelective(bookInfo);
@@ -214,7 +229,12 @@ public class BookInfoServiceImpl implements IBookInfoService {
         bookInfoMapper.updateByPrimaryKeySelective(bookInfo);
         return BSResultUtil.success();
     }
-
+    /**
+     * 通过主键查询书籍信息是否存在
+     * @param bookId
+     * @return
+     * @throws BSException
+     */
     @Override
     public BookInfo adminFindById(int bookId) throws BSException {
         Example bookInfoExample = new Example(BookInfo.class);
@@ -226,7 +246,11 @@ public class BookInfoServiceImpl implements IBookInfoService {
         }
         return bookInfo;
     }
-
+    /**
+     * 删除书籍信息
+     * @param bookId
+     * @return
+     */
     @Override
     @Transactional
     public BSResult deleteBook(int bookId) {

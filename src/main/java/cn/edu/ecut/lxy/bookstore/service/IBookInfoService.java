@@ -20,7 +20,7 @@ public interface IBookInfoService {
     List<BookInfo> findBookListByCateId(int cateId, int currentPage, int pageSize);
 
     /**
-     * 根据bookId查询书籍详情，根据条件查询列表，取第一个数据
+     * 根据bookId和上架查询书籍详情，根据条件查询列表，取第一个数据
      * @param bookId
      * @return
      * @throws BSException
@@ -39,7 +39,7 @@ public interface IBookInfoService {
     PageInfo<BookInfo> findBookListByCondition(String keywords, int cateId, int page, int pageSize,int storeId);
 
     /**
-     * 查询书籍信息通过bookId
+     * 查询书籍信息通过bookId，storeMount，上架
      * @param bookId
      * @return
      */
@@ -53,14 +53,41 @@ public interface IBookInfoService {
      */
     BSResult saveBook(BookInfo bookInfo,String bookDescStr);
 
+    /**
+     * 书籍单条信息修改
+     * @param bookInfo
+     * @param bookDesc
+     * @return
+     */
     BSResult updateBook(BookInfo bookInfo, String bookDesc);
-
+    /**
+     * 商品下架
+     *
+     * @param bookId
+     * @return
+     */
     BSResult changeShelfStatus(int bookId,int shelf);
 
+    /**
+     * 通过主键查询书籍信息是否存在
+     * @param bookId
+     * @return
+     * @throws BSException
+     */
     BookInfo adminFindById(int bookId) throws BSException;
 
+    /**
+     * 删除书籍信息
+     * @param bookId
+     * @return
+     */
     BSResult deleteBook(int bookId);
 
+    /**
+     * 浏览量加一
+     * @param bookInfo
+     * @return
+     */
     int addLookMount(BookInfo bookInfo);
 
     List<Pie> getBookViewsPiesByStoreId(Integer storeId);
