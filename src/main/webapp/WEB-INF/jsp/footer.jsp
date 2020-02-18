@@ -57,9 +57,9 @@
                 <span><a href="">联系方式|</a></span>
                 <span><a href="">友情链接</a></span>
             </dt>
-            <dt>Copyright @ 2020-2100年 达达公司 All Rights Reserved</dt>
-            <dt>Powered by <span style="font-size: 18px;">dd
-							</span><span style="font-size: 16px;color: deeppink;">最新版本</span>
+            <dt>Copyright ©️ 2020年 达达公司 All Rights Reserved</dt>
+            <dt>Powered by <span style="font-size: 18px;">达达公司
+							</span><span style="font-size: 16px;color: deeppink;">开发版</span>
             </dt>
             <dt>
                 <span>赣ICP备110009884号-3|</span>

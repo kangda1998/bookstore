@@ -110,9 +110,9 @@
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 17.5%;height: 100%; padding: 0;">
             <div class="news">
-                <p class="title">最新动态</p>
+                <p class="title">最新公告</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
+                    <li>要买好书，就来达达</li>
                     <li>今日特惠，5折抢购</li>
                     <li>满100减50</li>
                     <li>满300减150</li>
@@ -122,11 +122,11 @@
             <div class="hot_book">
                 <p class="title">新书热卖</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
-                    <li>今日特惠，5折抢购</li>
-                    <li>满100减50</li>
-                    <li>满300减150</li>
-                    <li>满400减210</li>
+                    <li>精装图书限时0元领</li>
+                    <li>开学季图书特惠</li>
+                    <li>更多专业图书</li>
+                    <li>小说系列满二送一</li>
+                    <li>等您来抢购</li>
                 </ul>
             </div>
         </div>
@@ -161,7 +161,7 @@
             <div class="hot_book">
                 <p class="title">畅销图书</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
+                    <li>要买好书，就来达达</li>
                     <li>今日特惠，5折抢购</li>
                     <li>满100减50</li>
                     <li>满300减150</li>
@@ -174,7 +174,7 @@
 </div>
 </div>
 
-<div style="height: 3px; background-color: #ff2832;"></div>
+<div style="height: 3px; background-color: #b7b5c9;"></div>
 
 <jsp:include page="footer.jsp"/>
 </body>

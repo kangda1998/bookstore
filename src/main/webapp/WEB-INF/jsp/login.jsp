@@ -46,7 +46,7 @@
 </head>
 <body>
 <jsp:include page="loginRegister_above.jsp"/>
-<div style="height: 3px; background-color: #ff2832;"></div>
+<div style="height: 3px; background-color: #b7b5c9;"></div>
 <div id="middle">
     <shiro:notAuthenticated>
     <form action="<%=basePath%>user/login" method="post" id="loginForm">

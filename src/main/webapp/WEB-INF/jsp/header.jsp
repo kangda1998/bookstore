@@ -93,5 +93,5 @@
         </ul>
     </div>
 </div>
-<div style="height: 3px; background-color: #ff2832;"></div>
+<div style="height: 3px; background-color: #b7b5c9;"></div>
 </html>

@@ -126,7 +126,7 @@
 </head>
 <body>
 <jsp:include page="loginRegister_above.jsp"/>
-<div style="height: 3px; background-color: #ff2832;"></div>
+<div style="height: 3px; background-color: #b7b5c9;"></div>
 <div id="center" style="background-color:#ebeeef;">
     <form action="user/register" id="regForm" method="post">
         <div id="table">

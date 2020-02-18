@@ -13,5 +13,4 @@
     </div>
     <div class="clear"></div>
 </div>
-<div style="height: 3px; background-color: #ff2832;"></div>
 </html>
