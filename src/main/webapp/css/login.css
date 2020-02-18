@@ -19,7 +19,8 @@ outline: none;
 }
 #middle{
 	height: 600px;
-	background: url(../img/advertisement.jpg) no-repeat fixed center;
+	padding: 100px;
+	background: url(../img/advertisement.jpg) no-repeat center -20px;
 }
 #loginForm{
 	width: 300px;
@@ -27,8 +28,8 @@ outline: none;
 	margin-left:65%;
 	border: 1px solid #eef2f4;
 	position: absolute;
-	top: 220px;
-	padding: 20px;
+	top: 150px;
+	padding: 40px;
 }
 #register{
 	width: 300px;
