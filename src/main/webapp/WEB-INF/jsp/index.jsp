@@ -148,7 +148,7 @@
             </div>
             <div class="product_div">
                 <ul class="product_ul">
-                    <c:forEach items="${bookInfos}" begin="8" end="17" var="bookInfo">
+                    <c:forEach items="${bookInfos}" begin="8" end="16" var="bookInfo">
                         <li class="product_li">
                             <a href="book/info/${bookInfo.bookId}" class="img" target="_blank">
                                 <img src="${bookInfo.imageUrl}"/>
@@ -169,13 +169,35 @@
         <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12" style="width: 17.5%;padding: 0;padding-top:20px ;">
             <div class="hot_book">
                 <p class="title">畅销图书</p>
-                <ul>
-                    <li>要买好书，就来达达</li>
-                    <li>今日特惠，5折抢购</li>
-                    <li>满100减50</li>
-                    <li>满300减150</li>
-                    <li>满400减210</li>
+                <ul class="product_ul">
+                    <c:forEach items="${bookInfos}" var="recommendBook" begin="18" end="19">
+                        <c:if test="${recommendBook.bookId != bookInfo.bookId}">
+                            <li class="product_li">
+                                <p class="pic">
+                                    <a href="book/info/${recommendBook.bookId}" class="img" target="_blank">
+                                        <img src="${recommendBook.imageUrl}"/>
+                                    </a>
+                                <p class="price">
+                                    <span class="rob">￥${recommendBook.price}</span>
+                                    <span class="oprice">￥${recommendBook.marketPrice}</span>
+                                </p>
+                                <p class="name">
+                                    <a href="book/info/${recommendBook.bookId}">${recommendBook.name}</a>
+                                </p>
+                                <p class="author">${recommendBook.author} 著，${recommendBook.press} 出</p>
+                                </p>
+                            </li>
+                        </c:if>
+                    </c:forEach>
                 </ul>
+
+            <%--                <ul>--%>
+<%--                    <li>要买好书，就来达达</li>--%>
+<%--                    <li>今日特惠，5折抢购</li>--%>
+<%--                    <li>满100减50</li>--%>
+<%--                    <li>满300减150</li>--%>
+<%--                    <li>满400减210</li>--%>
+<%--                </ul>--%>
             </div>
         </div>
     </div>

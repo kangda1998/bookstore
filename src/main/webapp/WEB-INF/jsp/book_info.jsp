@@ -142,7 +142,6 @@
             <div class="product_left">
                 <h3 style="">浏览此商品的顾客也同时浏览</h3>
                 <ul class="product_left_ul">
-
                     <c:forEach items="${recommendBookList}" var="recommendBook">
                         <c:if test="${recommendBook.bookId != bookInfo.bookId}">
                             <li class="product_li">

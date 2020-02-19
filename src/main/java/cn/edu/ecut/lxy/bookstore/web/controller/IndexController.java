@@ -41,7 +41,7 @@ public class IndexController {
             categoryList = cateService.getCategoryList();
         }
         //获得书籍列表
-        List<BookInfo> bookInfos = bookInfoService.findBookListByCateId(categoryList.get(new Random().nextInt(6)).getCateId(), new Random().nextInt(3), 18);
+        List<BookInfo> bookInfos = bookInfoService.findBookListByCateId(categoryList.get(new Random().nextInt(6)).getCateId(), new Random().nextInt(3), 20);
         model.addAttribute("bookInfos", bookInfos);
 
         return "index";
@@ -59,7 +59,7 @@ public class IndexController {
     public String bookListByCategoryId(@PathVariable("cateId") int cateId, Model model) {
 
 
-        List<BookInfo> bookInfos = bookInfoService.findBookListByCateId(cateId, new Random().nextInt(3), 18);
+        List<BookInfo> bookInfos = bookInfoService.findBookListByCateId(cateId, new Random().nextInt(3), 20);
         model.addAttribute("bookInfos", bookInfos);
         model.addAttribute("cateId", cateId);
         return "index";
