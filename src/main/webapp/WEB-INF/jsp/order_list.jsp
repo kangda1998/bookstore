@@ -77,8 +77,9 @@
                     <td>
                         <span>${orderCustom.order.orderId}</span>
                     </td>
-                    <td style="padding-left: 30px">
+                    <td style="padding-left: 120px">
                         <c:forEach items="${orderCustom.orderDetails}" var="orderDetail">
+
                             <span>${orderDetail.mount}&nbsp;x</span>
                             <a href="book/info/${orderDetail.bookId}" target="_blank" title="${orderDetail.bookName}"><img src="${orderDetail.imageUrl}"
                                                                            width="15%"/></a>
