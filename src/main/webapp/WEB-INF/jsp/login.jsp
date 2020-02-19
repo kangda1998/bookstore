@@ -53,7 +53,7 @@
         <div id="register">用户登录</div>
         <div id="username_div">
             <span id="row1"></span>
-            <input type="text" name="username" id="username" placeholder="用户名/手机号/邮箱"/>
+            <input type="text" name="username" id="username" placeholder="用户名"/>
         </div>
         <p class="tips">
         </p>
@@ -61,18 +61,18 @@
             <span id="row2"></span>
             <input type="password" name="password" id="password" placeholder="密码"/>
         </div>
-        <p class="tips">
-        </p>
-
-        <input type="submit" id="loginButton" value="登录"/>
+<%--        <p class="tips">--%>
+<%--        </p>--%>
         <div class="margin">
-            <span>记住我</span>
             <input type="checkbox" name="rememberMe" value="rememberMe"/>
+            <span>记住密码</span>
             <span class="error">${loginMsg}</span>
         </div>
+        <input type="submit" id="loginButton" value="登录"/>
+
         <div class="margin">
             <span class="a"><a href="page/register" title="免费注册" target="_blank">免费注册</a></span>
-            <span class="a"><a href="" title="忘记密码?">找回密码</a></span>
+            <span class="a"><a href="" title="忘记密码?">忘记密码</a></span>
         </div>
         <hr/>
         <div class="margin">

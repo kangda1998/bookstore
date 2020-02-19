@@ -133,13 +133,13 @@
             <div class="register">
                 <span>新用户注册/企业用户注册</span>
             </div>
-            <table id="register_table" style="margin-left:310px">
+            <table id="register_table" style="margin-left:210px">
                 <tr>
                     <td class="td">
                         用户名:
                     </td>
                     <td>
-                        <input type="text" name="username" class="text" />
+                        <input type="text" name="username" class="text"/>
                     </td>
                     <td>
                         <span class="error">${registerError}</span>
@@ -180,11 +180,11 @@
                     <td class="td">
                     </td>
                     <td>
-                        <span style="font-size: 15px;">我是普通用户</span> <input type="radio" name="identity"
-                                                                            value="ordinary"/>
+                        <input type="radio" name="identity"
+                               value="ordinary"/><span style="font-size: 15px;">我是普通用户</span>
                         <br/>
-                        <span style="font-size: 15px;">我是企业用户/商家</span> <input type="radio" name="identity"
-                                                                               value="business"/>
+                        <input type="radio" name="identity"
+                               value="business"/><span style="font-size: 15px;">我是企业用户/商家</span>
                     </td>
                     <td>
                     </td>
@@ -193,7 +193,7 @@
                     <td></td>
                     <td>
                         <input type="checkbox" name="agree" value="agree"/>
-                        <span><a href="">我已同意服务条款</a></span>
+                        <span><a href="">我已同意达达书城服务条款</a></span>
                     </td>
                     <td>
                     </td>
