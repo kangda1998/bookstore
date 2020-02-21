@@ -66,7 +66,7 @@
 <div class="container">
     <div class="row" style="border-bottom:1px dashed #CCCCCC;margin-bottom:15px ;">
         <a href="#">
-            <img src="img/1.jpg"/>
+            <img src="http://img62.ddimg.cn/2020/2/18/2020021821113598738.jpg"/>
         </a>
     </div>
     <div class="row" id="breadcrumb" style="margin-bottom:40px" ;>

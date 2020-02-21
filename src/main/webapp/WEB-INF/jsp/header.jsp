@@ -44,7 +44,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 logo">
             <a href="index" target="_blank"><img src="${applicationScope.globalParameter.weblogo}" width="90%"
-                                                 alt="dd.com"/></a>
+                                                 alt="dada.com"/></a>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 search">
             <form action="book/list" class="form-inline" id="searchForm" role="form" method="get">
