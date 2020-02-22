@@ -90,7 +90,16 @@ public interface IBookInfoService {
      */
     int addLookMount(BookInfo bookInfo);
 
+    /**
+     * 商店书籍访问量排行饼图
+     * @return
+     */
     List<Pie> getBookViewsPiesByStoreId(Integer storeId);
 
+    /**
+     * 销售量图
+     * @param storeId
+     * @return
+     */
     Bar getBookSalesBarJson(Integer storeId);
 }

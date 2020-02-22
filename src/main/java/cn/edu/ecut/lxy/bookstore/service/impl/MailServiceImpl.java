@@ -29,7 +29,13 @@ public class MailServiceImpl implements IMailService {
     @Value("${mail.fromMail.addr}")
     private String from;
 
-
+    /**
+     * 邮件发送，发送html形式
+     * @param to
+     * @param subject
+     * @param content
+     * @throws Exception
+     */
     @Override
     @Async//异步发邮件
     public void sendHtmlMail(String to, String subject, String content) throws Exception {

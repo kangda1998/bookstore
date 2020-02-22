@@ -56,11 +56,21 @@ public class OrderServiceImpl implements IOrderService {
     //确认收货
     private final int CONFIRM_REVEIVE = 4;
 
+    /**
+     * 用户查询订单
+     * @param userId
+     * @return
+     */
     @Override
     public List<OrderCustom> findOrdersByUserId(int userId) {
         return customMapper.findOrdersByUserId(userId);
     }
 
+    /**
+     * 店铺查询订单
+     * @param storeId
+     * @return
+     */
     @Override
     public List<OrderCustom> findOrdersByStoreId(int storeId) {
         return customMapper.findOrdersByStoreId(storeId);
@@ -166,7 +176,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     /**
-     * 支付后
+     * 支付后更新订单
      * @param payContext
      */
     @Override
@@ -199,6 +209,11 @@ public class OrderServiceImpl implements IOrderService {
 
     }
 
+    /**
+     * 订单发货
+     * @param orderId
+     * @return
+     */
     @Override
     public BSResult postOrder(String orderId) {
         Orders orders = new Orders();
@@ -214,7 +229,11 @@ public class OrderServiceImpl implements IOrderService {
         }
         return BSResultUtil.success();
     }
-
+    /**
+     * 获得自定义Order实体，包括订单物流信息，订单详情
+     * @param orderId
+     * @return
+     */
     @Override
     public OrderCustom findOrderCustomById(String orderId) {
         OrderCustom orderCustom = new OrderCustom();
@@ -228,14 +247,22 @@ public class OrderServiceImpl implements IOrderService {
         orderCustom.setOrderShipping(orderShipping);
         return orderCustom;
     }
-
+    /**
+     * 根据自定义Order实体更新订单
+     * @param orderCustom
+     * @return
+     */
     @Override
     public BSResult updateOrder(OrderCustom orderCustom) {
         orderMapper.updateByPrimaryKeySelective(orderCustom.getOrder());
         orderShippingMapper.updateByPrimaryKeySelective(orderCustom.getOrderShipping());
         return BSResultUtil.success();
     }
-
+    /**
+     * 确认收货
+     * @param orderId
+     * @return
+     */
     @Override
     public BSResult confirmReceiving(String orderId) {
         Orders order = new Orders();
