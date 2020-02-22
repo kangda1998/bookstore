@@ -10,10 +10,10 @@
             <dd class="f_d"><a href="" title="图书人气">图书人气</a></dd>
         </dl>
         <dl class="f_l">
-            <dt class="f_t"><a href="">经典国学</a></dt>
-            <dd class="f_d"><a href="" title="易经">易经</a></dd>
-            <dd class="f_d"><a href="" title="道德经">道德经</a></dd>
-            <dd class="f_d"><a href="" title="黄帝内经">黄帝内经</a></dd>
+            <dt class="f_t"><a href="">订单服务</a></dt>
+            <dd class="f_d"><a href="" title="配送服务查询">配送服务查询</a></dd>
+            <dd class="f_d"><a href="" title="订单状态查询">订单状态查询</a></dd>
+            <dd class="f_d"><a href="" title="自助取消订单">自助取消订单</a></dd>
         </dl>
         <dl class="f_l">
             <dt class="f_t"><a href="">会员中心</a></dt>
@@ -34,8 +34,8 @@
             <dd class="f_d"><a href="" title="投诉与建议">投诉与建议</a></dd>
         </dl>
         <dl id="f_r">
-            <dt><span style="color: #666;font-weight: bold;">充值热线（免长途费）<br/>888 999 666</span></dt>
-            <dd><span style="color: #666;font-weight: bold;display:block;margin-top: 10px;">客户服务热线（免长途费）<br/>888 999 666</span>
+            <dt><span style="color: #666;font-weight: bold;">充值热线（免长途费）<br/>888 888 666</span></dt>
+            <dd><span style="color: #666;font-weight: bold;display:block;margin-top: 10px;">客户服务热线（免长途费）<br/>666 999 666</span>
             </dd>
         </dl>
         <div class="clear"></div>
@@ -53,7 +53,7 @@
                 <span><a href="">关于我们|</a></span>
                 <span><a href="">广告服务|</a></span>
                 <span><a href="">人才招聘|</a></span>
-                <span><a href="">共谈生意|</a></span>
+                <span><a href="">商业合作|</a></span>
                 <span><a href="">联系方式|</a></span>
                 <span><a href="">友情链接</a></span>
             </dt>
