@@ -27,7 +27,11 @@ public class StoreServiceImpl implements IStoreService {
     @Autowired
     private UserMapper userMapper;
 
-
+    /**
+     * 店铺Id查询店铺
+     * @param storeId
+     * @return
+     */
     @Override
     public Store findById(int storeId) {
         Store store = storeMapper.selectByPrimaryKey(storeId);
@@ -35,7 +39,11 @@ public class StoreServiceImpl implements IStoreService {
         store.setStoreManagerName(user.getUsername());
         return store;
     }
-
+    /**
+     * 用户Id查询店铺
+     * @param userId
+     * @return
+     */
     @Override
     public Store findStoreByUserId(Integer userId) {
 
@@ -49,7 +57,10 @@ public class StoreServiceImpl implements IStoreService {
     }
 
     @Override
-
+    /**
+     * 查询所有店铺
+     * @return
+     */
     public List<Store> findStores() {
         List<Store> stores = storeMapper.selectAll();
         stores.forEach(store -> {
@@ -60,7 +71,11 @@ public class StoreServiceImpl implements IStoreService {
         });
         return stores;
     }
-
+    /**
+     * 修改店铺
+     * @param store
+     * @return
+     */
     @Override
     @Transactional
     public BSResult updateStore(Store store) {
@@ -68,14 +83,22 @@ public class StoreServiceImpl implements IStoreService {
         storeMapper.updateByPrimaryKeySelective(store);
         return BSResultUtil.success();
     }
-
+    /**
+     * 删除店铺
+     * @param storeId
+     * @return
+     */
     @Override
     @Transactional
     public BSResult deleteStore(int storeId) {
         storeMapper.deleteByPrimaryKey(storeId);
         return BSResultUtil.success();
     }
-
+    /**
+     * 新增店铺
+     * @param store
+     * @return
+     */
     @Override
     public BSResult addStore(Store store) {
         store.setCreated(new Date());

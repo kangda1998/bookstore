@@ -28,7 +28,10 @@ public class PrivilegeServiceImpl implements IPrivilegeService {
 
     @Autowired
     private CustomMapper customMapper;
-
+    /**
+     * 得到权限所有节点
+     * @return
+     */
     @Override
     public List<ZTreeNode> getZTreeNodes() {
         List<Privilege> privileges = privilegeMapper.selectAll();
@@ -46,12 +49,20 @@ public class PrivilegeServiceImpl implements IPrivilegeService {
         });
         return zTreeNodes;
     }
-
+    /**
+     * 查询单一权限
+     * @param privId
+     * @return
+     */
     @Override
     public BSResult findById(int privId) {
         return BSResultUtil.success(privilegeMapper.selectByPrimaryKey(privId));
     }
-
+    /**
+     * 修改单一权限
+     * @param privilege
+     * @return
+     */
     @Override
     @Transactional
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
@@ -60,7 +71,11 @@ public class PrivilegeServiceImpl implements IPrivilegeService {
         privilegeMapper.updateByPrimaryKeySelective(privilege);
         return BSResultUtil.success(privilegeMapper.selectByPrimaryKey(privilege.getPrivId()));
     }
-
+    /**
+     * 新增权限
+     * @param privilege
+     * @return
+     */
     @Override
     @Transactional
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
@@ -77,7 +92,6 @@ public class PrivilegeServiceImpl implements IPrivilegeService {
             parentPrivilege.setUpdated(new Date());
             updatePrivilege(parentPrivilege);
         }
-
         return BSResultUtil.success(privilege.getPrivId());
     }
 
@@ -103,7 +117,11 @@ public class PrivilegeServiceImpl implements IPrivilegeService {
         }
         return BSResultUtil.success(privId);
     }
-
+    /**
+     * 角色权限查询
+     * @param roleId
+     * @return
+     */
     @Override
     public List<ZTreeNode> getRolePrivileges(int roleId) {
         List<Privilege> privileges = privilegeMapper.selectAll();

@@ -32,12 +32,21 @@ public class RoleServiceImpl implements IRoleService {
 
     @Autowired
     private RolePrivilegeMapper rolePrivilegeMapper;
-
+    /**
+     * 查询所有角色
+     * @return
+     */
     @Override
     public List<Role> findAllRoles() {
         return roleMapper.selectAll();
     }
 
+    /**
+     * 修改用户的角色
+     * @param userId
+     * @param roleIds
+     * @return
+     */
     @Override
     @Transactional
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
@@ -64,14 +73,22 @@ public class RoleServiceImpl implements IRoleService {
     public Role findById(int roleId) {
         return roleMapper.selectByPrimaryKey(roleId);
     }
-
+    /**
+     * 单一角色删除
+     * @param roleId
+     * @return
+     */
     @Override
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
     public BSResult deleteById(int roleId) {
         roleMapper.deleteByPrimaryKey(roleId);
         return BSResultUtil.success();
     }
-
+    /**
+     * 单一角色新增
+     * @param role
+     * @return
+     */
     @Override
     @Transactional
     public BSResult addRole(Role role) {
@@ -80,7 +97,11 @@ public class RoleServiceImpl implements IRoleService {
         roleMapper.insert(role);
         return BSResultUtil.success();
     }
-
+    /**
+     * 单一角色修改
+     * @param role
+     * @return
+     */
     @Override
     @Transactional
     public BSResult updateRole(Role role) {
@@ -88,7 +109,12 @@ public class RoleServiceImpl implements IRoleService {
         roleMapper.updateByPrimaryKeySelective(role);
         return BSResultUtil.success();
     }
-
+    /**
+     * 修改角色的权限
+     * @param ids
+     * @param roleId
+     * @return
+     */
     @Override
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
     public BSResult updateRolesPrivilege(int[] ids, int roleId) {
