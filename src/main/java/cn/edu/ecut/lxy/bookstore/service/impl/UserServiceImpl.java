@@ -55,13 +55,19 @@ public class UserServiceImpl implements IUserService {
 
     @Value("${business.role-id}")
     private String businessRole;
-
+    /**
+     * 用户登陆
+     * @param username
+     * @param password
+     * @return
+     */
     @Override
     public BSResult login(String username, String password) {
         //根据用户名查询用户信息
         Example userExample = new Example(User.class);
         Example.Criteria criteria = userExample.createCriteria();
-        criteria.andEqualTo("username", username).andEqualTo("active", "1");
+        criteria.andEqualTo("username", username)
+                .andEqualTo("active", "1");
         List<User> users = userMapper.selectByExample(userExample);
 
         if (users == null || users.size() == 0) {
@@ -175,7 +181,11 @@ public class UserServiceImpl implements IUserService {
 
         return BSResultUtil.build(400, "不好意思，激活码已经失效", "");
     }
-
+    /**
+     * 用户新增
+     * @param user
+     * @return
+     */
     @Override
     public User addUser(User user) {
         user.setActive("1");
@@ -185,7 +195,11 @@ public class UserServiceImpl implements IUserService {
         userMapper.insert(user);
         return user;
     }
-
+    /**
+     * 用户信息修改
+     * @param user
+     * @return
+     */
     @Override
     public BSResult updateUser(User user) {
         if (StringUtils.isEmpty(user.getPassword())) {
@@ -205,17 +219,28 @@ public class UserServiceImpl implements IUserService {
         userMapper.deleteByPrimaryKey(userId);
 
     }
-
+    /**
+     * 查询该角色Id的所有用户
+     * @param roleId
+     * @return
+     */
     @Override
     public List<User> findBusinesses(int roleId) {
         return customMapper.findBusinesses(roleId);
     }
-
+    /**
+     * 查询所有用户
+     * @return
+     */
     @Override
     public List<User> findAllUsers() {
         return userMapper.selectAll();
     }
-
+    /**
+     * 用户查询
+     * @param userId
+     * @return
+     */
     @Override
     public User findById(int userId) {
         return userMapper.selectByPrimaryKey(userId);
