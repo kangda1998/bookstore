@@ -81,6 +81,8 @@ public class RoleServiceImpl implements IRoleService {
     @Override
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)
     public BSResult deleteById(int roleId) {
+        //删除之前查询是否有店铺
+        
         roleMapper.deleteByPrimaryKey(roleId);
         return BSResultUtil.success();
     }

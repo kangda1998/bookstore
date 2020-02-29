@@ -64,17 +64,17 @@
             <tr id="table_head">
                 <th width="10%" class="tcol1">订单编号</th>
                 <th width="30%" class="tcol1">买了什么</th>
-                <th width="10%">订单状态</th>
-                <th width="10%">金额</th>
+                <th width="15%">订单状态</th>
+                <th width="15%" style="padding-left: 15px">金额</th>
                 <th width="15%">收货地址</th>
-                <th width="25%">操作</th>
+                <th width="25%"style="padding-left: 30px">操作</th>
             </tr>
             </thead>
             <tbody>
             <c:forEach items="${orderCustoms}" var="orderCustom">
                 <tr class="order_item" id="order_item${orderCustom.order.orderId}">
 
-                    <td>
+                    <td style="padding-left: 20px">
                         <span>${orderCustom.order.orderId}</span>
                     </td>
                     <td style="padding-left: 120px">

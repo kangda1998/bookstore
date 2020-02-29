@@ -111,36 +111,6 @@ public class UserController {
         return "user_info";
     }
 
-    /* @RequestMapping("/login1")
-     public String login1(@RequestParam(value = "username", required = false) String username,
-                          @RequestParam(value = "password", required = false) String password,
-                          Model model, HttpServletRequest request) {
-
-         if (StringUtils.isEmpty(username)) {
-             model.addAttribute("loginMsg", USERNAME_CANNOT_NULL);
-             return "login";
-         }
-
-         if (StringUtils.isEmpty(password)) {
-             model.addAttribute("loginMsg", "密码不能为空");
-             return "login";
-         }
-
-         BSResult<User> bsResult = userService.login(username, password);
-         //登录校验失败
-         if (bsResult.getData() == null) {
-             model.addAttribute("loginMsg", bsResult.getMessage());
-             return "login";
-         }
-
-         //登录校验成功，重定向到首页
-         User user = bsResult.getData();
-         //置密码为空
-         user.setPassword("");
-         request.getSession().setAttribute("user", user);
-         return "redirect:/";
-     }
-     */
     //shiro框架帮我们注销
     @RequestMapping("/logout")
     @CacheEvict(cacheNames="authorizationCache",allEntries = true)

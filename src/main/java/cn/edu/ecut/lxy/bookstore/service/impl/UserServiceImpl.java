@@ -259,7 +259,7 @@ public class UserServiceImpl implements IUserService {
      */
     @Override
     public BSResult compareAndChange(int userId, String oldPassword, String newPassword) {
-        User user = userMapper.selectByPrimaryKey(userId);
+         User user = userMapper.selectByPrimaryKey(userId);
         String password = user.getPassword();
         if (password.equals(DigestUtils.md5DigestAsHex(oldPassword.getBytes()))) {
             user.setPassword(DigestUtils.md5DigestAsHex(newPassword.getBytes()));

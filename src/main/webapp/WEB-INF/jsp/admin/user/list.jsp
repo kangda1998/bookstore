@@ -24,6 +24,19 @@
     function deleteUser(userId) {
         if(confirm("真的要删除？")){
             location.href = "<%=basePath%>admin/user/deletion/"+userId;
+            <%--$.ajax({--%>
+            <%--    type: "POST",--%>
+            <%--    async: false,--%>
+            <%--    url: "<%=basePath%>admin/user/deletion/" + userId,--%>
+            <%--    success: function (result) {--%>
+            <%--        if (result.code==400) {--%>
+            <%--          alert(result.data())--%>
+            <%--        } else {--%>
+            <%--            alert(result.data);--%>
+            <%--        }--%>
+            <%--    }--%>
+            <%--});--%>
+
         }
     }
 

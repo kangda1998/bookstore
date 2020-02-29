@@ -68,16 +68,16 @@
                         <img src="img/lunbo3.jpg" alt="Third slide">
                     </div>
                     <div class="item">
-                        <img src="img/lunbo4.jpg" alt="Third slide">
+                        <img src="img/lunbo4.jpg" alt="Four slide">
                     </div>
                     <div class="item">
-                        <img src="img/lunbo5.jpg" alt="Third slide">
+                        <img src="img/lunbo5.jpg" alt="Five slide">
                     </div>
                     <div class="item">
-                        <img src="img/lunbo1.jpg" alt="Third slide">
+                        <img src="img/lunbo1.jpg" alt="Six slide">
                     </div>
                     <div class="item">
-                        <img src="img/lunbo6.jpg" alt="Third slide">
+                        <img src="img/lunbo6.jpg" alt="Seven slide">
                     </div>
                 </div>
                 <!-- 轮播（Carousel）导航 -->
