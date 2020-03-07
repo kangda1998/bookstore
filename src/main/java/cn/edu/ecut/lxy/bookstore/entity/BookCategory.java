@@ -16,11 +16,11 @@ public class BookCategory {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "status")
-    private Integer status;
+//    @Column(name = "status")
+//    private Integer status;
 
-    @Column(name = "sort_order")
-    private Integer sortOrder;
+//    @Column(name = "sort_order")
+//    private Integer sortOrder;
 
     @Column(name = "is_parent")
     private Boolean isParent;
@@ -73,33 +73,33 @@ public class BookCategory {
         this.name = name == null ? null : name.trim();
     }
 
-    /**
-     * @return status
-     */
-    public Integer getStatus() {
-        return status;
-    }
+//    /**
+//     * @return status
+//     */
+//    public Integer getStatus() {
+//        return status;
+//    }
+//
+//    /**
+//     * @param status
+//     */
+//    public void setStatus(Integer status) {
+//        this.status = status;
+//    }
 
-    /**
-     * @param status
-     */
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    /**
-     * @return sort_order
-     */
-    public Integer getSortOrder() {
-        return sortOrder;
-    }
-
-    /**
-     * @param sortOrder
-     */
-    public void setSortOrder(Integer sortOrder) {
-        this.sortOrder = sortOrder;
-    }
+//    /**
+//     * @return sort_order
+//     */
+//    public Integer getSortOrder() {
+//        return sortOrder;
+//    }
+//
+//    /**
+//     * @param sortOrder
+//     */
+//    public void setSortOrder(Integer sortOrder) {
+//        this.sortOrder = sortOrder;
+//    }
 
     /**
      * @return is_parent

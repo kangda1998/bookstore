@@ -44,8 +44,8 @@ public class GlobalParameter {
     @Column(name = "afford_method")
     private String affordMethod;
 
-    @Column(name = "shops_stream")
-    private String shopsStream;
+//    @Column(name = "shops_stream")
+//    private String shopsStream;
 
     /**
      * 送货方式
@@ -231,19 +231,19 @@ public class GlobalParameter {
         this.affordMethod = affordMethod == null ? null : affordMethod.trim();
     }
 
-    /**
-     * @return shops_stream
-     */
-    public String getShopsStream() {
-        return shopsStream;
-    }
+//    /**
+//     * @return shops_stream
+//     */
+//    public String getShopsStream() {
+//        return shopsStream;
+//    }
 
-    /**
-     * @param shopsStream
-     */
-    public void setShopsStream(String shopsStream) {
-        this.shopsStream = shopsStream == null ? null : shopsStream.trim();
-    }
+//    /**
+//     * @param shopsStream
+//     */
+//    public void setShopsStream(String shopsStream) {
+//        this.shopsStream = shopsStream == null ? null : shopsStream.trim();
+//    }
 
     /**
      * 获取送货方式
