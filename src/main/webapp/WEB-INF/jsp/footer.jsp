@@ -35,13 +35,13 @@
         </dl>
         <dl id="f_r">
             <dt><span style="color: #666;font-weight: bold;">充值热线（免长途费）<br/>888 888 666</span></dt>
-            <dd><span style="color: #666;font-weight: bold;display:block;margin-top: 10px;">客户服务热线（免长途费）<br/>666 999 666</span>
+            <dd><span style="color: #666;font-weight: bold;display:block;margin-top: 10px;">服务热线（免长途费）<br/>666 999 666</span>
             </dd>
         </dl>
         <div class="clear"></div>
     </div>
-    <div id="s">
-        <span style="font-size: 18px;">开发商：</span>
+    <div id="s" style="font-size: 18px">
+        <span style="font-size: 18px;font-family: 微软雅黑">开发商：</span>
         <a href="https://www.ecut.edu.cn/">东华理工大学</a>
         <a href="https://lxy.ecut.edu.cn/">理学院</a>
         <a href="">信息管理与信息系统</a>
@@ -58,8 +58,8 @@
                 <span><a href="">友情链接</a></span>
             </dt>
             <dt>Copyright ©️ 2020年 达达公司 All Rights Reserved</dt>
-            <dt>Powered by <span style="font-size: 18px;">达达公司
-							</span><span style="font-size: 16px;color: deeppink;">开发版</span>
+            <dt>Powered by <span style="font-size: 18px;">东理达达股份有限公司
+							</span><span style="font-size: 16px;">版本 1.0</span>
             </dt>
             <dt>
                 <span>赣ICP备110009884号-3|</span>

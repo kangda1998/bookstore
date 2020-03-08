@@ -231,6 +231,7 @@ table { border-collapse:collapse; border-spacing:0; }
 #s{
 	height: 38px;
 	border: 1px solid #CCC;
+	font-family: "微软雅黑";
 	margin: 8px 0px;
 	text-align: center;
 }

@@ -131,7 +131,7 @@
     <form action="user/register" id="regForm" method="post">
         <div id="table">
             <div class="register">
-                <span style="margin-left:170px; font-size: 30px;">新用户注册/企业用户注册</span>
+                <span style="margin-left:250px; font-size: 30px;">用户注册</span>
             </div>
             <table id="register_table" style="margin-left:210px">
                 <tr>
