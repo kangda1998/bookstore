@@ -21,29 +21,29 @@
     #left-menu {
         font-size: 13px;
         line-height: 18px;
-        color: #fff;
+        color: #0f0f0f;
     }
 
     #left-menu-main {
     }
 
     .left-menu-main-list {
-        background-color: #0A0A0A;
+        background-color:#e0e0e0;
     }
 
     .panel-body li:hover {
-        background-color: #222222;
+        background-color: #e0e0e0;
     }
 
     .panel-body a {
         display: inline-block;
         width: 218px;
-        color: #fff;
+        color: #0f0f0f;
         font-size: 20px;
         margin-top: 10px;
     }
 </style>
-<body style="background-color: #0A0A0A;">
+<body style="background-color: #D3D6DA">
 
 <div class="container" id="left-menu" style="padding-right:20px ;">
 
@@ -90,7 +90,7 @@
             <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
                     <ul>
-                        <li>
+                        <li style=":hover{background-color: red} ">
                             <a href="admin/store/list" target="centerFrame">店铺列表</a>
                         </li>
                         <li>
@@ -146,7 +146,7 @@
                     <div class="panel-body">
                         <ul>
 
-                            <li>
+                            <li style=":hover{background-color: #e0e0e0}">
                                 <a href="admin/store/${sessionScope.loginStore.storeId}" target="centerFrame">店铺信息</a>
                             </li>
                             <li>
